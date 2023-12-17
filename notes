@@ -1,0 +1,23 @@
+for(rows)
+    for(columms)
+        if top left: place randomly
+
+        otherwise;
+            check constraints of tile above and tile to left
+                if tile above points down (tiles 4, 5, 6, 7, 9, 11, 13, 15)
+                    then we need a tile that points up (1,3,5,7,12,13,14,15)
+                if the tile left points right ()
+                    then we need a tile that points left (fill inthis)
+                if both of these are true, we need one that points up and left 
+                handle edge cases too
+            decide on tile (random of options?)
+            place tile at row, column
+                do math to determine what is the center of the tile based on row,column and grid properties
+            store what tile you are placing in a matrix for future reference(constraint check)
+
+            setOfPossibleTiles = everything
+            check if tike is not in first row and tile above has line down
+                set of possibletiles intersect with up
+            check if tike is not in first col and tile left has line right
+                set of possibletiles intersect with left
+            pick random tile from set of possible tiles
